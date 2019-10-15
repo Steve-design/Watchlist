@@ -1,0 +1,16 @@
+
+{% import 'macros.html' as macro%}
+
+{% block content %}
+    <div class="row">
+
+        <h3> Found {{ movies| count }} matches </h3>
+        <hr>
+        <ul>
+            {{ macro.displayMovieList(movies)}}
+        </ul>
+
+    </div>
+
+</div>
+{% endblock %}
